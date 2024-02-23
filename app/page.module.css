@@ -1,0 +1,523 @@
+@tailwind components;
+
+@layer components {
+  /* Icons */
+  .sizeIcon {
+    @apply text-[24px] text-blackTheme;
+  }
+  .sizeIconMenu {
+    @apply absolute left-[1rem] top-[32%] flex text-[16px] text-blackTheme lg:hidden;
+  }
+  .iconTheme {
+    @apply absolute right-[1rem] top-[16px] flex lg:right-[28px] lg:top-[28px];
+  }
+
+  /* Navbar */
+  .navbarDark {
+    @apply fixed left-0 top-0 z-10 flex h-[3.5rem] w-full flex-row flex-nowrap content-center items-center justify-center overflow-hidden bg-navbar  lg:h-20;
+  }
+  .navbarClear {
+    @apply fixed left-0 top-0 z-10 flex h-[3.5rem] w-full flex-row flex-nowrap content-center items-center justify-center overflow-hidden bg-navbarClear  lg:h-20;
+  }
+  .navbarLogo {
+    @apply absolute top-[.5rem] h-[2.3rem] w-[9rem] object-cover lg:left-[8%] lg:top-[1rem] lg:h-50 lg:w-197;
+  }
+  .navbarOption2 {
+    @apply absolute right-[28rem] top-20 hidden h-10 w-[38rem] flex-row items-center gap-5  p-0_40 lg:flex;
+  }
+
+  .navbarOption {
+    @apply absolute right-[2%] top-20 hidden h-10 w-[96%]  lg:w-auto flex items-center gap-5 p-0_40 lg:flex;
+  }
+  .option {
+    @apply flex h-[3rem] w-[8rem] flex-row items-center justify-center font-Raleway text-[1.5em] font-normal not-italic leading-[29px];
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /*
+    Estilos para las opciones
+  margin-bottom: 10px; /* Espacio entre las opciones 
+  font-size: 18px; /* Tamaño de la fuente de las opciones */
+  }
+  .colorBlackTheme {
+    @apply text-blackTheme;
+  }
+  .colorClearTheme {
+    @apply text-fontBlackTheme;
+  }
+  .hr {
+    @apply h-[90%] w-[1px] border border-solid;
+  }
+  .hrMenu {
+    @apply h-[85%] w-[1px] border-none;
+    border-left: 2px solid #ffffff;
+  }
+  .navbarMenu {
+    @apply fixed left-0 top-[3.5rem] flex h-full w-[85%] flex-col gap-5 bg-menu backdrop-blur-[10px] lg:hidden;
+  }
+  .list {
+    @apply flex flex-col font-Raleway text-[1.5em] text-white;
+  }
+  .optionList {
+    @apply bg-menuList p-optionMenu;
+  }
+  .optionListPhone {
+    @apply relative top-[3.5rem] flex flex-col items-center justify-center bg-menuList p-socialMenu;
+  }
+  .optionListSocial {
+    @apply relative top-[7rem] flex flex-row items-center justify-center gap-3 bg-menuList p-socialMenu;
+  }
+  .buttonSocialMenu {
+    @apply mt-1 border-transparent bg-transparent text-3xl;
+  }
+
+   
+  .main {
+    background-color: #f0f0f0;
+    padding: 50px;
+   
+  }
+
+  /* Sección 1 */
+  .initial {
+    @apply h-[38rem] w-[100%] bg-main-section bg-cover bg-center bg-no-repeat lg:h-[50rem] lg:w-full lg:bg-fixed;
+  }
+  .boxMain {
+    @apply absolute left-auto right-[.6rem] top-[2.2rem] box-border h-[12rem] w-[95%] border border-solid lg:left-[8rem] lg:right-[8.3rem] lg:top-[7.5rem] lg:flex lg:h-[25rem] lg:w-[17rem];
+    border: 3px solid #44f8ef;
+  }
+  .boxTitle {
+    @apply absolute left-[3rem] lg:left-[10rem] top-[6rem] h-[9rem] w-[70%] lg:top-[11rem] lg:w-[45%];
+  }
+  .titleMain {
+    @apply font-Raleway text-4xl font-semibold not-italic text-fontBlackTheme lg:text-7xl xl:text-8xl;
+  }
+  .titleMain2 {
+    @apply font-Raleway text-xl font-semibold not-italic text-fontBlackTheme lg:text-6xl xl:text-7xl;
+  }
+  
+  /*Termina seccion 1*/
+
+  /* Sección 2*/
+  /* Sección 2*/
+  .information {
+    @apply grid h-auto  w-auto grid-cols-1 gap-12 lg:absolute lg:h-[43rem] lg:w-full lg:grid-cols-2 lg:flex-col;
+
+  }
+  .informationLeft {
+    @apply relative flex flex-col lg:static;
+  }
+  .informationRight {
+    @apply flex flex-col items-center justify-center lg:items-start;
+    padding: 10px;
+   
+  }
+  .informationBack {
+    @apply absolute right-[11.7rem] top-[6rem] hidden bg-[#d9d9d9] lg:flex lg:h-[31rem] lg:w-[20rem];
+    z-index: 1;
+}
+
+  .informationImage {
+    @apply relative right-[20rem] top-[1.5rem] h-[15rem] w-[100%] bg-information-image2 bg-cover bg-center bg-no-repeat lg:absolute lg:right-[10rem] lg:top-[4.8rem] lg:h-[31rem] lg:w-[20rem] lg:bg-information-image1;
+    z-index: 2;
+}
+
+.informationImgTrasera {
+  @apply relative right-[20rem] top-[1.5rem] h-[15rem] w-[100%] bg-information-image2 bg-cover bg-center bg-no-repeat lg:absolute lg:right-[10rem] lg:top-[4.8rem] lg:h-[31rem] lg:w-[20rem] lg:bg-information-image1;
+  z-index: 2;
+}
+
+.informationFront {
+  @apply absolute left-auto right-[.6rem] top-[2.2rem] box-border h-[12rem] w-[95%] lg:left-auto lg:right-[8.3rem] lg:top-[3.5rem] lg:flex lg:h-[31rem] lg:w-[20rem] border border-solid;
+  z-index: 3;
+}
+
+  .informationRight h1 {
+    @apply top-[10rem] left-[2rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-semibold
+     not-italic leading-[46px]  lg:absolute lg:w-[22rem] lg:text-[2.4em];
+     font-size: 25px;
+     color: #19191C;
+     font-weight: bold;
+  }
+
+  .informationRight h2 {
+    @apply top-[5rem] left-[-1rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+    font-size: 28px; /* Cambia el tamaño de la fuente a 20px */
+    color: #44FBEF; 
+    font-weight: bold;
+    font-weight: 50000;
+
+  }
+
+  .informationRight h3 {
+    @apply top-[10rem] left-[2rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold
+     not-italic leading-[46px]  lg:absolute lg:w-[22rem] lg:text-[2.4em];
+     line-height: 1.5;
+     letter-spacing: 0px; 
+     font-size: 25px;
+     font-weight: bold;
+     text-align: justify;
+     bottom: 30px;
+     
+  
+  }
+
+  .informationRight p {
+    @apply top-[15rem] left-[2.9rem] flex w-[90%] items-center font-Quicksand text-[1.1em] font-normal not-italic leading-[20px] lg:absolute lg:m-0 lg:h-[8rem] lg:w-[30rem] lg:text-[2em] lg:leading-[39px];
+    font-size: 15px; /* Cambia el tamaño de la fuente a 20px */
+    color: #000000; 
+    font-weight: bold;
+    line-height: 1.5;
+
+  }
+
+  .informationRight h4 {
+    @apply top-[23rem] left-[10rem] flex w-[90%] items-center font-Quicksand text-[1.1em] font-normal not-italic leading-[20px] lg:absolute lg:m-0 lg:h-[8rem] lg:w-[30rem] lg:text-[2em] lg:leading-[39px];
+    font-size: 70px; /* Cambia el tamaño de la fuente a 20px */
+    color: #000000; 
+    font-weight: bold;
+    line-height: 1.5;
+
+  }
+  .informationRight h5 {
+    @apply top-[23rem] left-[15rem] flex w-[90%] items-center font-Quicksand text-[1.1em] font-normal not-italic leading-[20px] lg:absolute lg:m-0 lg:h-[8rem] lg:w-[30rem] lg:text-[2em] lg:leading-[39px];
+    font-size: 15px; /* Cambia el tamaño de la fuente a 20px */
+    color: #000000; 
+    line-height: 1.2;
+
+  }
+  .boxSup {
+    @apply relative bottom-[-1rem] left-[-9rem] h-[14px] w-[18px] border-l border-t border-solid lg:left-[-0.2rem] lg:top-[-10rem] lg:h-[100px] lg:w-[100px];
+  }
+  .boxInf {
+    @apply relative bottom-[2rem] right-[-9rem] h-[14px] w-[18px] lg:bottom-[-8rem] lg:right-[-77%] lg:h-[100px] lg:w-[100px] border-r border-b border-solid;
+  }
+  .buttonInformation {
+    @apply bottom-[9rem] top-[33.5rem] left-[6.5rem] z-[1] flex h-[1.7rem] w-[7.5rem] flex-row items-center gap-[10px] bg-black p-[10px] text-center font-Raleway  text-[1rem] font-normal not-italic leading-[29px] text-white dark:bg-black lg:absolute lg:h-[3rem] lg:w-[11rem] lg:text-[1.5rem];
+    font-size: 1.2rem;
+    width: 10rem; /*  */
+    height: 2rem;
+    padding-left: 20px;
+}
+
+  .buttonBack {
+    @apply bottom-[13rem] top-[35rem] left-[6.5rem] ml-[14px] mt-[-16px] box-border h-[1.7rem] w-[7.5rem] lg:absolute lg:h-[2.2rem] lg:w-[9.8rem];
+    border: 1px solid #808080;
+  }
+
+  .recInf {
+    @apply absolute left-[.6rem] top-[2.2rem] box-border h-[12rem] w-[95%] lg:left-[8rem] lg:top-[24.5rem] lg:flex lg:h-[5rem] lg:w-[5rem] border border-solid; 
+    border: 3.5px solid #44F8EF;
+  }
+
+  
+   /*Termina seccion 2*/
+
+  /* Galery */
+
+  .sectionGalery {
+    @apply top-[42.625rem] lg:relative;
+  }
+
+  .galery {
+    @apply h-auto w-auto bg-cover bg-fixed bg-center bg-no-repeat;
+  }
+
+  /* Creativos */
+  .sectionCreativos {
+    @apply top-[42.6rem] lg:relative;
+  }
+  .creativosContainer {
+    @apply flex h-[100%] w-[100%] flex-row flex-wrap justify-around;
+  }
+  .box {
+    @apply flex h-[18.75rem] w-[20rem] flex-col lg:h-[31.25rem] lg:w-[25rem];
+    margin-top: 200px;
+  }
+  .boxImageCreativos {
+    @apply flex top-[50rem] h-[12.5rem] w-[20rem] bg-contain bg-center bg-no-repeat lg:h-[25rem] lg:w-[25rem];
+    z-index: 5;
+    
+  }
+
+  .creativoAHAU {
+    @apply bg-creativo-AHAU;
+  }
+  .creativoNatt {
+    @apply bg-creativo-natt;
+  }
+  .creativoCEIBA {
+    @apply bg-creativo-CEIBA;
+  }
+
+  .boxLabel {
+    @apply flex w-full flex-row flex-nowrap content-center items-center justify-center text-center font-Raleway text-2xl font-medium not-italic leading-10;
+    
+  }
+
+  .creativosContainer h1 {
+    @apply text-black;
+  }
+  .creativosTitle {
+    @apply flex flex-row justify-center font-Raleway text-[3.052rem] tracking-widest ;
+    font-size: 28px; /* Cambia el tamaño de la fuente a 20px */
+    color: #44FBEF; 
+    font-weight: bold;
+    font-weight: 50000;
+    z-index: 2
+  }
+
+  .titleBlue h6 {
+    @apply top-[0rem] left-[28rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+    font-size: 28px; /* Cambia el tamaño de la fuente a 20px */
+    color: #44FBEF; 
+    font-weight: bold;
+    font-weight: 50000;
+
+  }
+  .titleDarck a{
+    @apply top-[3rem] left-[28rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+    font-size: 30px; /* Cambia el tamaño de la fuente a 20px */
+    color: #000000; 
+    font-weight: bold;
+    font-weight: 50000;
+
+  }
+
+  /*SE AGREGARON */
+  .creativoF4sf {
+    @apply bg-creativo-F4sf;
+  }
+
+  .creativoOndas {
+    @apply bg-creativo-ondas;
+  }
+
+  .informationText{
+    @apply top-[5rem] left-[-1rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+    font-size: 20px; /* Cambia el tamaño de la fuente a 20px */
+    color: #44FBEF; 
+    font-weight: bold;
+    font-weight: 50000;
+
+  }
+
+  /* Estilos para la imagen que se debe posicionar detrás */
+.boxImageCreat2 {
+  position: absolute; /* Posiciona de manera absoluta */
+  top: 10; /* Ajusta según sea necesario */
+  left: 0; /* Ajusta según sea necesario */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 50%; /* Ocupa todo el alto del contenedor */
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-position: center; /* Ajusta la posición de la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  z-index: 0; /* Establece un z-index más bajo para estar detrás de las otras imágenes */
+  opacity: 0.2; /* Ajusta el valor según el nivel de transparencia deseado */
+
+}
+.textLine{
+  @apply top-[6rem] left-[14rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+  font-size: 20px; /* Cambia el tamaño de la fuente a 20px */
+  color: #000000; 
+  text-decoration: underline;
+}
+.textLine1{
+  @apply top-[6rem] left-[28rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+  font-size: 20px; /* Cambia el tamaño de la fuente a 20px */
+  color: #000000; 
+  text-decoration: underline;
+}
+.textLine2{
+  @apply top-[6rem] left-[43rem] flex h-[4.5rem] w-full flex-row items-center justify-center font-Raleway text-[1.7em] font-extrabold not-italic leading-[46px] lg:absolute lg:w-[22rem] lg:text-[2.4em];
+  font-size: 20px; /* Cambia el tamaño de la fuente a 20px */
+  color: #000000; 
+  text-decoration: underline;
+}
+  .boxImageCreat {
+    @apply flex h-[120rem] w-[20rem]   bg-contain bg-center bg-no-repeat lg:h-[25rem] lg:w-[35rem] ;
+    
+  }
+
+  /*TERMINA CREATIVOS */
+
+  /* Section CONTACT INFO */
+
+  .contactinfo h1 {
+    @apply flex flex-row  p-4 text-center font-Raleway text-[1em] font-bold -tracking-tighter lg:pt-[4rem] lg:text-[3rem] lg:leading-[3rem];
+    color: #44f8ef;
+    margin: 300px 0 1rem 0;
+  }
+  .contactinfo h2 {
+    @apply flex flex-row  p-4 text-center font-Raleway text-[1em] font-bold -tracking-tighter lg:pt-[4rem] lg:text-[-3rem] lg:leading-[3rem];
+    color: #000000;
+    margin: -50px 0 1rem 0;
+  }
+  .contactinfo h3 {
+    @apply flex flex-row  p-4 text-center font-Raleway text-[1em] font-bold -tracking-tighter lg:pt-[4rem] lg:text-[-3rem] lg:leading-[3rem];
+    color: #000000;
+    margin: -90px 0 1rem 0;
+  }
+  .contactinfo p {
+    @apply p-2 text-left font-Raleway text-4xl font-bold not-italic leading-7;
+    margin: 10px 0 1rem 0;
+    color: #000000;
+  }
+  .contactinfo i {
+    @apply items-center p-[0.2rem] text-center text-4xl lg:p-8;
+  }
+  .iContent {
+    @apply p-6 text-center lg:bg-transparent lg:p-4;
+  }
+  .buttonSocial {
+    @apply m-0 border-transparent bg-transparent p-1;
+  }
+  .buttonInfo {
+    @apply my-8 h-24 w-full justify-center rounded p-3 text-center font-Raleway text-4xl font-black  not-italic  leading-7 lg:w-1/3 lg:text-2xl lg:font-extrabold;
+  }
+
+  .imagen-fondo {
+    width: 200px; /* Ancho deseado para la imagen */
+    height: auto; /* Altura ajustada automáticamente para mantener la relación de aspecto */
+    position: fixed; /* Fija la posición para que se mantenga en su lugar mientras se hace scroll */
+    bottom: 20px; /* Coloca la imagen a 20px desde la parte inferior de la ventana */
+    right: 20px; /* Coloca la imagen a 20px desde el borde derecho de la ventana */
+    z-index: -1; /* Asegura que la imagen esté detrás de otros elementos */
+  }
+
+  .socialContainer {
+    display: flex; /* Hace que los elementos dentro del contenedor se muestren en línea */
+    justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+    gap: 1rem; /* Espacio entre los elementos hijos del contenedor */
+  }
+
+  .container {
+    /* Estilos para el contenedor */
+    padding: 600px; /* Ajuste del relleno del contenedor según sea necesario */
+  }
+  
+  .buttonContainer span {
+    /* Estilos para el número dentro del botón */
+    font-size: 20px; /* Tamaño de fuente del número */
+    color: #b82c2c; /* Color rojo para los números */
+  }
+  
+  .buttonContainer {
+    /* Estilos para el botón dentro del contenedor */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    color: #0a0a0a; /* Color del texto del botón */
+    border: none; /* Sin borde en el botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+  }
+
+  .contactinf h1 {
+    @apply flex flex-row justify-center p-4 text-center font-Raleway text-[1.5em] font-bold -tracking-tighter lg:pt-[1rem] lg:text-[3.052rem] lg:leading-[3.563rem];
+    color: #67f8f0;
+  }
+  .contactinf p {
+    @apply p-2 text-center font-Raleway text-4xl font-bold not-italic leading-7;
+    margin: 10 0 1rem 0;
+    color: #000000;
+  }
+
+  .buttonContainer span {
+    /* Estilos para el número dentro del botón */
+    font-size: 20px; /* Tamaño de fuente del número */
+    color: #ef2424; /* Color rojo para los números */
+  }
+  .buttonContainer {
+    /* Estilos para el botón dentro del contenedor */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    color: #0a0a0a; /* Color del texto del botón */
+    border: none; /* Sin borde en el botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+  }
+  .buttonInfor {
+    @apply bottom-[13.5rem] top-[48.5rem] right-[33rem] z-[1] flex h-[1.7rem] w-[7.5rem] flex-row items-center gap-[10px] bg-white p-[10px] text-center font-Raleway  text-[1rem] font-normal not-italic leading-[29px] text-fontBlackThemeButton dark:bg-black lg:absolute lg:h-[3rem] lg:w-[11rem] lg:text-[1.5rem];
+    color: #ffffff;
+    border: 1px solid #000000;
+    background-color: black; /* Agregar este estilo para rellenar el botón de color negro */
+    margin-left: 10; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+    bottom: 86px; /* Ajusta la distancia desde el borde inferior */
+  }
+  .boxIn {
+    @apply relative bottom-[2rem] right-[-9rem] h-[14px] w-[18px] border-b border-r border-solid lg:bottom-[-8rem] lg:right-[-77%] lg:h-[100px] lg:w-[100px];
+  }
+
+  .buttonBac {
+    @apply bottom-[5em] top-[50rem] right-[32rem] ml-[14px] mt-[-16px] box-border h-[1.7rem] w-[7.5rem] lg:absolute lg:h-[3rem] lg:w-[11rem];
+    border: 1px solid #bd3b3b;
+  }
+
+  .contenedor {
+    position: relative;
+    width: 100px; /* ajusta el ancho según tus necesidades */
+    height: 100px; /* ajusta la altura según tus necesidades */
+    border: 1px solid #ccc; /* solo para visualizar el contenedor */
+  }
+
+  .styles.boxImageCreativos {
+    position: absolute;
+    top: -1000; /* mover la imagen a la parte superior */
+    right: 0; /* mover la imagen a la derecha */
+    transform: translate(
+      10,
+      0
+    ); /* asegura que la imagen no se desplace del punto establecido */
+  }
+
+  .boxI {
+    @apply relative bottom-[2rem] right-[-9rem] h-[14px] w-[18px] lg:bottom-[-8rem] lg:right-[-77%] lg:h-[100px] lg:w-[100px] border-r border-b border-solid;
+  }
+
+  .bo {
+    @apply flex h-[18.75rem] w-[20rem] flex-col lg:h-[25rem] lg:w-[20rem];
+ 
+  }
+  .buttonIn {
+    @apply bottom-[9rem] top-[26rem] left-[3rem] z-[1] flex h-[1.7rem] w-[7.5rem]  flex-row items-center gap-[10px] bg-black p-[10px] text-center font-Raleway  text-[1rem] font-normal not-italic leading-[29px] text-white dark:bg-black lg:absolute lg:h-[3rem] lg:w-[11rem] lg:text-[1.5rem];
+    font-size: 1.2rem;
+    width: 10rem; /*  */
+    height: 2rem;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    color:#000000
+  }
+  
+  .buttonBa {
+    @apply bottom-[13rem] top-[27.5rem] left-[3.5rem] ml-[14px] mt-[-16px] box-border h-[1.7rem] w-[7.5rem] lg:absolute lg:h-[2.2rem] lg:w-[9.8rem] text-center ;
+    border: 1px solid #000000;
+    background-color: black;
+  }
+
+
+  .nuevoContenedor {
+    /* Estilos del contenedor */
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  
+  /* Estilos para la clase 'boxImageCreat' */
+  .nuevoContenedor {
+    /* Estilos de la clase boxImageCreat */
+    width: 20%;
+    height: 0%;
+    
+    /* Movimiento hacia la derecha y hacia abajo */
+    margin-left: 450px; /* Mover hacia la derecha */
+    margin-top: -580px; /* Mover hacia abajo */
+  }
+  .boxImageCreat {
+    width: 700px;
+    height: 700px;
+    top: 500;
+    
+
+  }
+}

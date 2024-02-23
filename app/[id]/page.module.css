@@ -1,0 +1,306 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .mainContainer {
+    @apply w-full  min-w-[20rem] ;
+    margin: 0 auto;
+  }
+  /* Icons */
+  .sizeIcon {
+    @apply text-2xl text-blackTheme;
+  }
+  .sizeIconMenu {
+    @apply absolute left-4 top-5 flex text-base text-blackTheme lg:hidden;
+  }
+
+  .iconTheme {
+    @apply absolute right-4 top-4 flex lg:right-7 lg:top-7;
+  }
+
+  /* Navbar */
+  .navbarDark {
+    @apply left-0 top-0 flex h-14 w-full flex-row flex-nowrap content-center items-center justify-center bg-navbar lg:h-20 overflow-hidden fixed  z-10;
+  }
+  .navbarClear {
+    @apply left-0 top-0 flex h-14 w-full flex-row flex-nowrap content-center items-center justify-center bg-navbarClear lg:h-20 overflow-hidden fixed  z-10;
+  }
+  .navbarLogo {
+    @apply absolute top-[10px] h-auto w-[140px] object-cover lg:left-[8%] lg:top-15 lg:h-auto lg:w-auto;
+  }
+
+  .textNav{
+    @apply absolute top-2 text-transparent text-base lg:-right-32 lg:text-2xl leading-7 font-normal lg:w-40 lg:h-7 text-black font-Raleway;
+  }
+  .navbarOption {
+    @apply absolute right-28 top-20 hidden h-10 w-586 flex-row items-center gap-10  p-0_40 lg:flex;
+  }
+  .colorBlackTheme {
+    @apply text-blackTheme;
+  }
+  .colorClearTheme {
+    @apply text-fontBlackTheme;
+  }
+  .hr {
+    @apply h-4/5 w-1 border border-solid;
+  }
+  .hrMenu {
+    @apply h-4/5 w-1 border-none;
+    border-left: 2px solid #ffffff;
+  }
+  .navbarMenu {
+    @apply fixed left-0 top-14 flex h-full w-4/5 flex-col gap-5 bg-menu backdrop-blur-md lg:hidden;
+  }
+  .list {
+    @apply flex flex-col font-Raleway text-xl text-white;
+  }
+  .optionList {
+    @apply bg-menuList p-optionMenu;
+  }
+  .optionListPhone {
+    @apply relative top-12 flex flex-col items-center justify-center bg-menuList p-socialMenu;
+  }
+  .optionListSocial {
+    @apply relative top-24 flex flex-row items-center justify-center gap-3 bg-menuList p-socialMenu;
+  }
+  .buttonSocialMenu {
+    @apply mt-1 border-transparent bg-transparent text-3xl;
+  }
+  /*social media*/
+  .socialMedia{
+    @apply hidden lg:block  h-[100vh] w-full items-center ;
+  }
+  .container{
+    @apply  fixed top-[4vh] z-10;
+  }
+  .iconF{
+    @apply  absolute w-10 h-10 left-[86.313rem] top-[25.625rem];
+  }
+  .iconI{
+    @apply  absolute w-10 h-10 left-[86.313rem] top-[29.375rem];
+  }
+
+  .iconP{
+    @apply   absolute w-10 h-10 left-[86.313rem] top-[33.125rem];
+  }
+
+  .iconC{
+    @apply  absolute w-10 h-10 left-[86.313rem] top-[22.188rem];
+
+  }
+
+  .iconW{
+    @apply absolute w-10 h-10 left-[86.313rem] top-[18.563rem];
+  }
+
+  /*fondo*/
+  .fondo{
+    background-image: url('/images/Lightroom.jpg');
+    @apply w-full h-[56.25rem] bg-no-repeat bg-cover bg-center lg:bg-fixed;
+  }
+
+  .boxTitle {
+    @apply absolute left-10 top-28 h-auto w-auto lg:top-96 lg:w-[65%] lg:left-[20%];
+  }
+  .titleMain {
+    @apply font-Raleway text-center text-4xl font-semibold not-italic text-fontBlackTheme lg:text-7xl xl:text-8xl ;
+  }
+
+  /*conocenos section movil*/
+  @media screen and (min-width: 1024px) {
+    .informationMovil i{
+      font-size: 0rem;
+    }
+  }
+
+  .imagen{
+    @apply relative left-0 top-7 h-[37.5rem] w-full bg-cover bg-center bg-no-repeat lg:h-0 lg:w-0 ;
+    background-image: url('/images/Fondo2.JPG');
+  }
+
+  .informationMovil{
+    @apply flex flex-col h-80 items-center justify-center ;
+  }
+
+  .informationMovil h1{
+    @apply flex h-12 w-full flex-row items-center justify-center font-Raleway font-semibold not-italic leading-10 lg:h-0 lg:w-0 lg:text-transparent text-4xl;
+  }
+
+  .informationMovil p{
+    @apply top-56 m-4 flex w-11/12 items-center text-center font-Quicksand text-3xl font-normal not-italic leading-5 lg:h-0 lg:w-0 lg:text-transparent;
+  }
+
+  .informationMovil i{
+    @apply lg:w-0 h-0  ; 
+  }
+
+  .boxSup {
+    @apply lg:h-0 lg:w-0 absolute bottom-[-72.125rem] left-3 h-4 w-5  border-l border-t border-solid border-black;
+
+  }
+  .boxInf {
+    @apply lg:h-0 lg:w-0 absolute bottom-[-86.188rem] right-[10px] h-4 w-5  border-r border-b border-solid border-black;
+  }
+  /*conocenos section screen*/
+
+  .conocenosSection{
+    background-image: url('/images/Fondo2.JPG');
+    @apply lg:w-full lg:h-[56.25rem] lg:bg-no-repeat lg:bg-cover lg:bg-center ;
+  }
+  .boxInformation{
+    @apply absolute w-auto h-full lg:w-[46.875rem] lg:h-[56.25rem]  left-0;
+    } 
+    
+  .boxInformation h1{
+    @apply absolute lg:w-72 lg:h-16 lg:left-24 lg:top-56 font-Quicksand not-italic lg:font-bold lg:text-5xl lg:leading-[3.813rem] text-black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .boxInformation i{
+    @apply absolute lg:w-auto lg:h-auto lg:left-24 lg:top-[28.188rem]  ;
+  }
+
+  .boxInformation p {
+    @apply absolute lg:w-[34rem] lg:h-28 lg:left-24 lg:top-72 font-Quicksand not-italic lg:font-normal lg:text-3xl lg:leading-10 flex items-center text-black ;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Section Projects */
+  .sectionProjects {
+    @apply w-[100%] max-h-full bg-themeDark-microsite grid grid-cols-1 lg:grid-cols-2 relative lg:top-0 justify-evenly items-center justify-items-center;
+  }
+  .project {
+    @apply lg:w-[90%] w-[95%] lg:h-[40rem] h-[30rem] flex flex-col items-center relative bg-white p-4 mt-[3rem] mx-[3rem];
+  }
+  .projectImage {
+    @apply w-[100%] lg:h-[35rem] h-[80%] bg-no-repeat bg-cover bg-center;
+  }
+  .infoProyect {
+    @apply p-2 font-Quicksand  text-black;
+  }
+  .infoProyect h1 {
+    @apply font-bold text-[2rem] uppercase text-center;
+  }
+
+  /* Mariel */
+  .contactform form div {
+    @apply p-[1em] m-0;
+  }
+  .contactform h1 {
+    width: 100%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38.83px;
+    line-height: 57px;
+    text-align: center;
+  }
+  .boxSupF {
+    @apply absolute lg:left-[640px] lg:top-[10px] lg:h-[100px] lg:w-[100px] border-l border-t border-solid;
+  }
+  .boxInfF {
+    @apply absolute lg:bottom-[140px] lg:right-[28px] lg:h-[100px] lg:w-[100px] lg:border-r lg:border-b lg:border-solid;
+  }
+
+  .boxSupI {
+    @apply absolute bottom-[-2430px] left-[50px] h-[14px] w-[18px] border-l border-t border-solid lg:border-transparent lg:bottom-0 lg:h-0 lg:w-0;
+  }
+  .boxInfI {
+    @apply absolute bottom-[-2500px] right-[50px] h-[14px] w-[18px] border-r border-b border-solid lg:border-transparent lg:bottom-0 lg:h-0 lg:w-0;
+  }
+  .contactform form .block {
+    @apply text-center;
+    grid-column: span 1 / 3;
+  }
+  .contactform form .block1 {
+    grid-column: 1/3;
+  }
+  .contactform form input {
+    @apply w-[100%] h-12 p-3 rounded bg-white font-Raleway not-italic font-light text-2xl leading-6;
+  }
+  
+  .contactform form textarea {
+    @apply w-[100%] h-40 p-3 bg-white font-Raleway rounded-xl text-black
+    font-light text-2xl leading-6;
+
+  }
+  .contactform form button {
+    @apply lg:bottom-[215px] lg:right-[70px] lg:h-[24px] lg:w-[100%] lg:gap-[10px] bg-fontBlackTheme lg:p-[25px] font-Raleway text-[30px] leading-[1px] text-fontBlackThemeButton right-[320px] absolute p-3 z-10;
+    width: 160px;
+    height: 48px;
+
+  }
+  .buttonBackForm {
+      @apply absolute box-border lg:w-[185px] w-[160px] h-[48px] lg:h-[50px] lg:right-[50px] right-[310px]  bottom-[-2280px] lg:bottom-[200px] ml-[14px] mt-[-16px];
+      border: 1px solid #808080
+      
+  }
+
+  /* CONTACT INFO */
+  .contactinfo p {
+    @apply text-[18px] lg:text-[25px] text-center p-2 font-Raleway not-italic font-medium leading-7;
+    margin: 0 0 1rem 0;
+    padding: 0.5em;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  .contactinfo i {
+    @apply p-8;
+  }
+  .iContent {
+    @apply p-4 text-center bg-neutral-500;
+  }
+  .buttonSocial {
+    @apply bg-transparent border-transparent;
+  }
+  .buttonInfo {
+    @apply w-full justify-center text-center p-2 font-Raleway not-italic font-extrabold  text-2xl leading-7 rounded;
+    margin: 70px 0px 0px;
+    background: #111b21;
+  }
+
+  /* LARGE SIZE */
+  @media (min-width: 1024px) {
+    .contactwrapper {
+      @apply grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 20px;
+    }
+    .contactwrapper > .contactinfo:nth-child(2) {
+      grid-row: 1;
+    }
+
+    .contactinfo p,
+    .iContent,
+    .contactform h1 {
+       @apply text-left;
+    }
+
+    .buttonInfo {
+      @apply text-justify;
+      width: 70%;
+    }
+
+    .wB{
+      @apply text-justify;
+    }
+    .separateSocial{
+      border: 0.5px solid #000000;
+    }
+
+    .iContent, .iContent i {
+      background-color: #ffffff00;
+      color: #ffffff00;
+    }
+
+    .contactform form {
+      @apply grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .contactform form button {
+      @apply z-10 w-[13%];
+    }
+
+  }
+}

@@ -1,0 +1,109 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .mainContainer {
+    @apply w-full min-w-[320px] lg:h-[100rem] h-[150rem];
+    margin: 0 auto;
+  }
+
+  /* Icons */
+  .sizeIconMenu {
+    @apply absolute left-[5%] top-[32%] flex text-[1rem] text-blackTheme lg:hidden;
+  }
+
+  /* Navbar */
+  .navbarDark {
+    @apply left-0 top-0 flex h-[3.5rem] w-full flex-row flex-nowrap content-center items-center justify-center bg-navbar lg:h-20 overflow-hidden fixed  z-10;
+  }
+  .navbarLogo {
+    @apply absolute top-[10px] h-[35px] w-[140px] object-cover lg:left-[8%] lg:top-15 lg:h-[70%] lg:w-197;
+  }
+  .textNav{
+    @apply absolute text-transparent text-base right-[10%] lg:right-[-14%]  lg:text-2xl leading-7 font-normal  lg:w-[150px] lg:h-[29px] text-black font-Raleway;
+  }
+  .navbarOption {
+    @apply absolute right-[101px] top-20 hidden h-10 w-586 flex-row items-center gap-10  p-0_40 lg:flex;
+  }
+  .option {
+    @apply flex h-[29px] w-[132px] flex-row items-center justify-center font-Raleway text-[22px] font-normal not-italic leading-[29px] flex-none order-[0] flex-grow-0;
+  }
+  .colorBlackTheme {
+    @apply text-blackTheme;
+  }
+  .colorClearTheme {
+    @apply text-fontBlackTheme;
+  }
+  .hr {
+    @apply h-[90%] w-[1px] border border-solid;
+  }
+  .hrMenu {
+    @apply h-[85%] w-[1px] border-none;
+    border-left: 2px solid #ffffff;
+  }
+  .navbarMenu {
+    @apply fixed left-0 top-[55px] flex h-full w-[85%] flex-col gap-5 bg-menu backdrop-blur-[10px] lg:hidden;
+  }
+  .list {
+    @apply flex flex-col font-Raleway text-[22px] text-white;
+  }
+  .optionList {
+    @apply bg-menuList p-optionMenu;
+  }
+  .optionListPhone {
+    @apply relative top-[50px] flex flex-col items-center justify-center bg-menuList p-socialMenu;
+  }
+  .optionListSocial {
+    @apply relative top-[90px] flex flex-row items-center justify-center gap-3 bg-menuList p-socialMenu;
+  }
+  .buttonSocialMenu {
+    @apply mt-1 border-transparent bg-transparent text-3xl;
+  }
+
+  /*  Section */
+  .sectionMain {
+    @apply w-[100%] lg:h-[100rem] h-[150rem] relative;
+  }
+  .containerMain {
+    @apply relative top-[80px];
+  }
+  .titleMain {
+    @apply font-bold lg:text-[2em] text-[1.7em] uppercase text-left p-2 font-Quicksand relative w-[60%] left-[2%];
+  }
+  .route {
+    @apply text-[1.2em] absolute top-3 right-[2rem] rotate-180;
+  }
+  .firstGrid {
+    @apply grid lg:grid-cols-3 grid-cols-1 gap-5 justify-items-center;
+  }
+  .mainImage {
+    @apply w-auto lg:w-[51rem] lg:h-[25rem] h-auto lg:col-span-2;
+  }
+  .containerText {
+    @apply w-[95%] h-[25rem] lg:border lg:border-solid border-hidden lg:mr-[3rem];
+  }
+  .containerText h1 {
+    @apply font-bold text-[1.5em] text-left p-4 font-Quicksand;
+  }
+  .containerText h2 {
+    @apply font-bold text-[1.1em] text-left px-4 font-Quicksand;
+  }
+  .containerText p {
+    @apply font-normal text-[1em] px-4 font-Quicksand text-justify;
+  }
+  .secondContainer {
+    @apply grid lg:grid-cols-3 grid-cols-1 gap-5 justify-items-center mt-4 p-8;
+  }
+  .secondImage {
+    @apply w-auto lg:h-[24rem] h-[14rem];
+  }
+
+  /* Social Media */
+  .containerSocial {
+    @apply grid grid-flow-row auto-rows-max fixed top-[38vh] right-[0.3%] gap-y-4;
+  }
+  .iconSocial {
+    @apply text-[0px] lg:text-[1.4rem] border-b-2 border-black pb-3;
+  }
+
+}
